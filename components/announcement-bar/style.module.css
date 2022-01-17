@@ -1,0 +1,10 @@
+.container {
+	height: 48px;
+	background: var(--accent-darkblue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container caption {
+	color: var(--white);
+}

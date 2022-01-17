@@ -1,0 +1,35 @@
+.topsettingcontainer {
+	border-bottom: 1px rgba(0, 35, 77, 0.1) solid;
+	height: 48px;
+}
+
+.topsettingsubcontainer {
+	width: 1140px;
+	margin: 0px auto;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	color: var(--accent-darkblue);
+}
+
+.topsettingitemscontainer {
+	display: flex;
+	margin-left: auto;
+	gap: 20px;
+}
+
+.topsettingitemscontainer p {
+	cursor: pointer;
+	padding: 4px 0px;
+}
+
+.topsettingitemscontainer p:hover {
+	border-bottom: 1px solid var(--accent-darkblue);
+}
+
+.icon {
+	text-align: center;
+	position: relative;
+	top: 3px;
+	margin-right: 4px;
+}

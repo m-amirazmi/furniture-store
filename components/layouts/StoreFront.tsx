@@ -1,3 +1,11 @@
+import { AnnouncementBar } from "../announcement-bar";
+import { Header } from "../header";
+
 export const StoreFrontLayout: React.FC = ({ children }) => {
-	return <div>This is layout{children}</div>;
+	return (
+		<>
+			<AnnouncementBar />
+			<Header />
+		</>
+	);
 };
