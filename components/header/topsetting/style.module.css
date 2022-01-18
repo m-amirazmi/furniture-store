@@ -4,7 +4,8 @@
 }
 
 .topsettingsubcontainer {
-	width: 1140px;
+	max-width: 1140px;
+	width: 100%;
 	margin: 0px auto;
 	display: flex;
 	align-items: center;
@@ -32,4 +33,48 @@
 	position: relative;
 	top: 3px;
 	margin-right: 4px;
+}
+
+.country {
+	position: relative;
+}
+
+.countries {
+	position: absolute;
+	right: 50%;
+	transform: translate(50%, 0%);
+	background-color: var(--white);
+	border: 1px rgba(0, 35, 77, 0.1) solid;
+	padding: 4px 8px;
+	margin-top: 4px;
+	width: max-content;
+}
+
+.countries p {
+	padding: 8px;
+	margin: 4px 0px;
+}
+
+.countries p:hover {
+	border: none;
+	background-color: rgba(0, 35, 77, 0.1);
+	border-radius: 4px;
+}
+.selected,
+.countries .selected:hover {
+	background-color: rgba(0, 35, 77, 0.1);
+	border-radius: 4px;
+	border: 1px solid var(--accent-darkblue);
+}
+
+@media screen and (max-width: 576px) {
+	.topsettingsubcontainer {
+		padding: 0px 12px;
+	}
+	.topsettingsubcontainer p {
+		font-size: 12px;
+	}
+	.topsettingitemscontainer {
+		gap: 4px;
+	}
 }

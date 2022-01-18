@@ -1,12 +1,17 @@
 import Image from "next/image";
-import { ICountry } from "../../../utils/interfaces";
+import { Dispatch, SetStateAction, useState } from "react";
+import { countries } from "data/countries";
+import { ICountry } from "utils/interfaces";
 import styles from "./style.module.css";
 
 interface TopSettingProps {
 	country: ICountry | undefined;
+	setCountry: Dispatch<SetStateAction<string>>;
 }
 
-export const TopSetting: React.FC<TopSettingProps> = ({ country }) => {
+export const TopSetting: React.FC<TopSettingProps> = ({ country, setCountry }) => {
+	const [showCountries, setShowCountries] = useState<boolean>(false);
+
 	return (
 		<div className={styles.topsettingcontainer}>
 			<div className={styles.topsettingsubcontainer}>
@@ -18,13 +23,27 @@ export const TopSetting: React.FC<TopSettingProps> = ({ country }) => {
 						</span>
 						<span>Login</span>
 					</p>
-					<p>
+					<p className={styles.country} onClick={() => setShowCountries(!showCountries)}>
 						<span className={styles.icon}>
 							<Image src={`/assets/images/countries/${country?.shortcode}.svg`} alt={country?.name} width={25} height={15} />
 						</span>
 						<span>
 							{country?.code} ({country?.symbol})
 						</span>
+						{showCountries && (
+							<div className={styles.countries}>
+								{countries.map((c) => (
+									<p key={c.id} className={c.code === country?.code ? styles.selected : ""} onClick={() => setCountry(c.id)}>
+										<span className={styles.icon}>
+											<Image src={`/assets/images/countries/${c?.shortcode}.svg`} alt={country?.name} width={25} height={15} objectFit="contain" />
+										</span>
+										<span>
+											{c?.code} ({c?.symbol})
+										</span>
+									</p>
+								))}
+							</div>
+						)}
 					</p>
 				</div>
 			</div>

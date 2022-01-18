@@ -1,0 +1,29 @@
+.maincontainer {
+	border-bottom: 1px rgba(0, 35, 77, 0.1) solid;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0px auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	height: 88px;
+	justify-content: space-between;
+	color: var(--accent-darkblue);
+}
+
+.container div:nth-child(2) {
+	display: flex;
+	gap: 30px;
+}
+
+.container div:nth-child(2) a {
+	color: var(--accent-darkblue);
+	text-decoration: none;
+}
+
+.container div:nth-child(3) {
+	display: flex;
+	gap: 12px;
+}

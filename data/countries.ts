@@ -8,6 +8,22 @@ export const countries = [
 		shortcode: "my",
 	},
 	{
+		id: "3",
+		name: "Singapore",
+		rate: 0.32,
+		code: "SGD",
+		symbol: "S$",
+		shortcode: "sg",
+	},
+	{
+		id: "4",
+		name: "Indonesia",
+		rate: 3435.6,
+		code: "IDR",
+		symbol: "Rp",
+		shortcode: "id",
+	},
+	{
 		id: "2",
 		name: "United State",
 		rate: 0.24,

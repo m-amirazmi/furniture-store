@@ -7,7 +7,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>FurnitureStore | Welcome!</title>
+				<title>Bisum | Welcome!</title>
 			</Head>
 			<StoreFrontLayout>
 				<Component {...pageProps} />
