@@ -1,0 +1,34 @@
+[
+	{
+		"id": "1",
+		"name": "Malaysia",
+		"rate": 1,
+		"currencyCode": "MYR",
+		"symbol": "RM",
+		"shortCode": "my"
+	},
+	{
+		"id": "3",
+		"name": "Singapore",
+		"rate": 0.32,
+		"currencyCode": "SGD",
+		"symbol": "S$",
+		"shortCode": "sg"
+	},
+	{
+		"id": "4",
+		"name": "Indonesia",
+		"rate": 3435.6,
+		"currencyCode": "IDR",
+		"symbol": "Rp",
+		"shortCode": "id"
+	},
+	{
+		"id": "2",
+		"name": "United State",
+		"rate": 0.24,
+		"currencyCode": "USD",
+		"symbol": "$",
+		"shortCode": "us"
+	}
+]

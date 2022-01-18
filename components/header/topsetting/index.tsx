@@ -1,16 +1,14 @@
 import Image from "next/image";
-import { Dispatch, SetStateAction, useState } from "react";
-import { countries } from "data/countries";
-import { ICountry } from "utils/interfaces";
+import { useState } from "react";
 import styles from "./style.module.css";
+import { useSelector } from "react-redux";
+import { RootState } from "redux/store";
+import { useCountry } from "hooks/useCountry";
 
-interface TopSettingProps {
-	country: ICountry | undefined;
-	setCountry: Dispatch<SetStateAction<string>>;
-}
-
-export const TopSetting: React.FC<TopSettingProps> = ({ country, setCountry }) => {
+export const TopSetting: React.FC = () => {
 	const [showCountries, setShowCountries] = useState<boolean>(false);
+	const { country, countries } = useSelector((state: RootState) => state.currencies);
+	const { handleClick } = useCountry();
 
 	return (
 		<div className={styles.topsettingcontainer}>
@@ -25,20 +23,20 @@ export const TopSetting: React.FC<TopSettingProps> = ({ country, setCountry }) =
 					</p>
 					<p className={styles.country} onClick={() => setShowCountries(!showCountries)}>
 						<span className={styles.icon}>
-							<Image src={`/assets/images/countries/${country?.shortcode}.svg`} alt={country?.name} width={25} height={15} />
+							<Image src={`/assets/images/countries/${country?.shortCode}.svg`} alt={country?.name} width={25} height={15} />
 						</span>
 						<span>
-							{country?.code} ({country?.symbol})
+							{country?.currencyCode} ({country?.symbol})
 						</span>
 						{showCountries && (
 							<div className={styles.countries}>
 								{countries.map((c) => (
-									<p key={c.id} className={c.code === country?.code ? styles.selected : ""} onClick={() => setCountry(c.id)}>
+									<p key={c.id} className={c.currencyCode === country?.currencyCode ? styles.selected : ""} onClick={() => handleClick(c.shortCode)}>
 										<span className={styles.icon}>
-											<Image src={`/assets/images/countries/${c?.shortcode}.svg`} alt={country?.name} width={25} height={15} objectFit="contain" />
+											<Image src={`/assets/images/countries/${c?.shortCode}.svg`} alt={country?.name} width={25} height={15} objectFit="contain" />
 										</span>
 										<span>
-											{c?.code} ({c?.symbol})
+											{c?.currencyCode} ({c?.symbol})
 										</span>
 									</p>
 								))}
