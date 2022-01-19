@@ -3,12 +3,13 @@ import { IStoreFrontProps } from "utils/interfaces";
 import { AnnouncementBar } from "../announcement-bar";
 import { Header } from "../header";
 
-export const StoreFrontLayout: React.FC<IStoreFrontProps> = ({ countryCode }) => {
+export const StoreFrontLayout: React.FC<IStoreFrontProps> = ({ children, countryCode }) => {
 	useCountry(countryCode);
 	return (
 		<>
 			<AnnouncementBar />
 			<Header />
+			{children}
 		</>
 	);
 };

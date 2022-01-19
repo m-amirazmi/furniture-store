@@ -1,8 +1,12 @@
+import { useNavigation } from "hooks/useNavigation";
 import Image from "next/image";
 import Link from "next/link";
+import NavItem from "./navitem";
 import styles from "./style.module.css";
 
 const Navbar: React.FC = () => {
+	const { routes } = useNavigation();
+
 	return (
 		<div className={styles.maincontainer}>
 			<div className={styles.container}>
@@ -10,32 +14,9 @@ const Navbar: React.FC = () => {
 					<Image src="/assets/images/logo.svg" alt="Logo" width={122} height={32} />
 				</div>
 				<div>
-					<Link href="/">
-						<a>
-							<p className="subtitle-sm">New</p>
-						</a>
-					</Link>
-					<Link href="/">
-						<a>
-							<p className="subtitle-sm">Categories</p>
-						</a>
-					</Link>
-					<Link href="/">
-						<a>
-							<p className="subtitle-sm">Shop</p>
-						</a>
-					</Link>
-					<Link href="/">
-						<a>
-							<p className="subtitle-sm">Blog</p>
-						</a>
-					</Link>
-
-					<Link href="/">
-						<a>
-							<p className="subtitle-sm">Contact</p>
-						</a>
-					</Link>
+					{routes.map((route) => (
+						<NavItem key={route.id} route={route} />
+					))}
 				</div>
 				<div>
 					<span>

@@ -1,0 +1,29 @@
+[
+	{
+		"id": "4",
+		"path": "/shop",
+		"name": "New",
+		"query": "new"
+	},
+	{
+		"id": "5",
+		"path": "/shop",
+		"name": "Categories",
+		"query": "all"
+	},
+	{
+		"id": "1",
+		"path": "/shop",
+		"name": "Shop"
+	},
+	{
+		"id": "2",
+		"path": "/blog",
+		"name": "Blog"
+	},
+	{
+		"id": "3",
+		"path": "/contact",
+		"name": "Contact"
+	}
+]

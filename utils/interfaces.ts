@@ -21,3 +21,14 @@ export interface IApp extends AppProps {
 export interface IStoreFrontProps {
 	countryCode: string;
 }
+
+export interface IRoute {
+	id: string;
+	path: string;
+	name: string;
+	query?: string;
+}
+
+export interface INavItemProps {
+	route: IRoute;
+}
