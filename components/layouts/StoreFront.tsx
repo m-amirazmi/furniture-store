@@ -1,10 +1,12 @@
+import axios from "axios";
 import { useCountry } from "hooks/useCountry";
-import { IStoreFrontProps } from "utils/interfaces";
+import { useEffect } from "react";
 import { AnnouncementBar } from "../announcement-bar";
 import { Header } from "../header";
 
-export const StoreFrontLayout: React.FC<IStoreFrontProps> = ({ children, countryCode }) => {
-	useCountry(countryCode);
+export const StoreFrontLayout: React.FC = ({ children }) => {
+	useCountry();
+
 	return (
 		<>
 			<AnnouncementBar />

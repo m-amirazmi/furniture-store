@@ -5,28 +5,25 @@ import Head from "next/head";
 import { StoreFrontLayout } from "../components/layouts/StoreFront";
 import { Provider } from "react-redux";
 import { store } from "redux/store";
-import axios from "axios";
 import { IApp } from "utils/interfaces";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
+import NextNProgress from "nextjs-progressbar";
+import "react-loading-skeleton/dist/skeleton.css";
+import { SkeletonTheme } from "react-loading-skeleton";
 
-export default function MyApp({ Component, pageProps, countryCode }: IApp) {
+export default function MyApp({ Component, pageProps }: IApp) {
 	return (
 		<>
 			<Head>
 				<title>Bisum | Welcome!</title>
 			</Head>
+			<NextNProgress color="rgba(255,255,255,0.7)" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
 			<Provider store={store}>
-				<StoreFrontLayout countryCode={countryCode}>
-					<Component {...pageProps} />
-				</StoreFrontLayout>
+				<SkeletonTheme>
+					<StoreFrontLayout>
+						<Component {...pageProps} />
+					</StoreFrontLayout>
+				</SkeletonTheme>
 			</Provider>
 		</>
 	);
 }
-
-MyApp.getInitialProps = async (appContext: AppContext) => {
-	const appProps = await App.getInitialProps(appContext);
-	const { data } = await axios.get("http://localhost:9100/api/country");
-	return { ...appProps, countryCode: data.data.country_code.toLowerCase() };
-};

@@ -10,9 +10,11 @@ const Navbar: React.FC = () => {
 	return (
 		<div className={styles.maincontainer}>
 			<div className={styles.container}>
-				<div>
-					<Image src="/assets/images/logo.svg" alt="Logo" width={122} height={32} />
-				</div>
+				<Link href="/">
+					<a>
+						<Image src="/assets/images/logo.svg" alt="Logo" width={122} height={32} />
+					</a>
+				</Link>
 				<div>
 					{routes.map((route) => (
 						<NavItem key={route.id} route={route} />

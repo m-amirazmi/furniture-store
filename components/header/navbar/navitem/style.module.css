@@ -1,0 +1,20 @@
+.container {
+	position: relative;
+	transition: all 0.5s ease-in;
+	padding: 0px 24px;
+}
+
+.hoverline {
+	display: none !important;
+	position: absolute;
+	background-color: var(--accent-darkblue);
+	height: 3px;
+	width: 100%;
+	bottom: -35px;
+	left: 0px;
+	transition: all 0.5s ease-in;
+}
+
+.container:hover .hoverline {
+	display: block !important;
+}
