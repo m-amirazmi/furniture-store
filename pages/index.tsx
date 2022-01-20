@@ -1,14 +1,15 @@
 import { NextPage } from "next";
-import Image from "next/image";
-import styles from "./style.module.css";
+import Hero from "components/home/hero";
+import Promises from "components/home/promises";
+import CollectionBanner from "components/home/collectionbanner";
 
 const Home: NextPage = () => {
 	return (
-		<div className={styles.container}>
-			<div className={styles.heroimg}>
-				<Image src="/assets/images/placeholder/hero.png" alt="placeholder" layout="fill" />
-			</div>
-		</div>
+		<>
+			<Hero />
+			<Promises />
+			<CollectionBanner />
+		</>
 	);
 };
 

@@ -1,0 +1,32 @@
+.container {
+	max-width: 1140px;
+	margin: 0px auto;
+	width: 100%;
+	padding: 55px 0px;
+}
+
+.subcontainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.item h5 {
+	color: var(--accent-darkblue);
+}
+
+.item p {
+	color: #77889b;
+}

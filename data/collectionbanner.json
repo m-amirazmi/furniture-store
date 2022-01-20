@@ -1,0 +1,35 @@
+[
+	{
+		"id": "1",
+		"position": "lefttop",
+		"title": "20% Off On Tank Tops",
+		"desc": "20% Off On Tank Tops",
+		"link": {
+			"href": "/",
+			"title": "View more"
+		},
+		"image": "placeholder/promiseslefttop.png"
+	},
+	{
+		"id": "2",
+		"position": "leftbottom",
+		"title": "Let’s Buy Lorem Ipsum",
+		"desc": "30% Off On Tank Tops",
+		"link": {
+			"href": "/",
+			"title": "View more"
+		},
+		"image": "placeholder/promisesleftbottom.png"
+	},
+	{
+		"id": "2",
+		"position": "right",
+		"title": "Let’s buy lorem ipsum",
+		"desc": "50% Off On Tank Tops",
+		"link": {
+			"href": "/",
+			"title": "View more"
+		},
+		"image": "placeholder/promisesright.png"
+	}
+]
