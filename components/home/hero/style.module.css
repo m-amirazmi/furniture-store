@@ -8,3 +8,23 @@
 	width: 100%;
 	position: relative;
 }
+
+.bannerweb {
+	display: block;
+}
+
+.bannermob {
+	display: none;
+}
+
+@media screen and (max-width: 579px) {
+	.container {
+		height: 400px;
+	}
+	.bannerweb {
+		display: none;
+	}
+	.bannermob {
+		display: block;
+	}
+}

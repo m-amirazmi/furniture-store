@@ -12,7 +12,6 @@ export const StoreFrontLayout: React.FC = ({ children }) => {
 			<AnnouncementBar />
 			<Header />
 			{children}
-			Test
 		</>
 	);
 };
