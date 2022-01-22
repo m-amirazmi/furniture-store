@@ -1,0 +1,132 @@
+.container {
+	max-width: 1160px;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.container > div:nth-child(1) {
+	color: var(--accent-darkblue);
+	text-align: center;
+}
+
+.container h2 {
+	margin-bottom: 32px;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.products .product {
+	width: 25%;
+	padding: 12px;
+}
+
+.product {
+	margin-bottom: 12px;
+	position: relative;
+	cursor: pointer;
+}
+
+.colors {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	display: flex;
+	gap: 8px;
+}
+
+.title {
+	color: var(--accent-darkblue);
+	margin-bottom: 12px;
+}
+
+.price {
+	color: rgba(0, 35, 77, 0.7);
+}
+
+.discount {
+	color: #ff2828;
+	text-decoration: line-through;
+	margin-left: 8px;
+}
+
+.discountTag {
+	position: absolute;
+	top: 60px;
+	left: 24px;
+	background-color: #ff6b6c;
+	font-size: 12px;
+	color: #fff;
+	padding: 4px 12px;
+	border-radius: 4px;
+}
+
+.tag {
+	position: absolute;
+	top: 24px;
+	left: 24px;
+	background-color: var(--accent-darkblue);
+	font-size: 12px;
+	color: #fff;
+	padding: 4px 12px;
+	border-radius: 4px;
+}
+
+.hovericons {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	display: flex;
+	animation: slidein 1s normal;
+	transform: translate(-50%, -50%);
+}
+
+.hovericons div {
+	background-color: var(--white);
+	height: 100%;
+	margin: 0px 8px;
+	padding: 4px;
+	width: 48px;
+	height: 48px;
+	border-radius: 52px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buttonContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 24px 0px;
+}
+
+.button {
+	font-size: 14px;
+	line-height: 120%;
+	text-align: center;
+	text-decoration: none;
+	color: var(--accent-darkblue);
+	font-weight: 500;
+	padding: 8px 16px;
+	border: 2px var(--accent-darkblue) solid;
+	border-radius: 4px;
+	transition: all 0.25s ease-in-out;
+}
+.button:hover {
+	background-color: var(--accent-darkblue);
+	color: var(--white);
+}
+
+@keyframes slidein {
+	0% {
+		transform: translate(-50%, 0%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}

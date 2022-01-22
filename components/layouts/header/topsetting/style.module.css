@@ -4,13 +4,14 @@
 }
 
 .topsettingsubcontainer {
-	max-width: 1140px;
+	max-width: 1160px;
 	width: 100%;
 	margin: 0px auto;
 	display: flex;
 	align-items: center;
 	height: 100%;
 	color: var(--accent-darkblue);
+	padding: 0px 12px;
 }
 
 .topsettingitemscontainer {

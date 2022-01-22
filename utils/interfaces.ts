@@ -32,3 +32,12 @@ export interface IRoute {
 export interface INavItemProps {
 	route: IRoute;
 }
+
+export interface Product {
+	pid: number | string;
+	name: string;
+	price: number;
+	isFeatured?: boolean;
+	isNew?: boolean;
+	discountRate?: number;
+}
