@@ -3,6 +3,8 @@ import Hero from "components/home/hero";
 import Promises from "components/home/promises";
 import CollectionBanner from "components/home/collectionbanner";
 import FeaturedProducts from "components/home/featuredproducts";
+import FeaturedCollections from "components/home/featuredcollections";
+import VideoBanner from "components/home/videobanner";
 
 const Home: NextPage = () => {
 	return (
@@ -11,6 +13,8 @@ const Home: NextPage = () => {
 			<Promises />
 			<CollectionBanner />
 			<FeaturedProducts />
+			<FeaturedCollections />
+			<VideoBanner />
 		</>
 	);
 };
