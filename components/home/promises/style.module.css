@@ -30,3 +30,13 @@
 .item p {
 	color: #77889b;
 }
+
+@media screen and (max-width: 579px) {
+	.subcontainer {
+		white-space: nowrap;
+		overflow-x: scroll;
+	}
+	.item {
+		padding: 0px 28px;
+	}
+}

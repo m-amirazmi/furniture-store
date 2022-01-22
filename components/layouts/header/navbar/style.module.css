@@ -26,3 +26,9 @@
 	display: flex;
 	gap: 12px;
 }
+
+@media screen and (max-width: 579px) {
+	.container div:nth-child(2) {
+		display: none;
+	}
+}
