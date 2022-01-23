@@ -1,0 +1,18 @@
+.container {
+	width: 75%;
+	color: var(--accent-darkblue);
+}
+
+.title {
+	display: flex;
+	gap: 8px;
+}
+
+.title p:nth-child(2),
+.title p:nth-child(3) {
+	color: rgba(0, 35, 77, 0.6);
+}
+
+.title p:nth-child(3) {
+	margin-left: auto;
+}
