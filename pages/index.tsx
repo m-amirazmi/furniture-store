@@ -5,6 +5,8 @@ import CollectionBanner from "components/home/collectionbanner";
 import FeaturedProducts from "components/home/featuredproducts";
 import FeaturedCollections from "components/home/featuredcollections";
 import VideoBanner from "components/home/videobanner";
+import CustomerReview from "components/home/customerreview";
+import Banner from "components/home/banner";
 
 const Home: NextPage = () => {
 	return (
@@ -15,6 +17,8 @@ const Home: NextPage = () => {
 			<FeaturedProducts />
 			<FeaturedCollections />
 			<VideoBanner />
+			<CustomerReview />
+			<Banner />
 		</>
 	);
 };

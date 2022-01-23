@@ -1,0 +1,73 @@
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: var(--accent-darkblue);
+	gap: 100px;
+	margin-bottom: 60px;
+}
+
+.container > div {
+	width: 50%;
+}
+
+.container > div > h2 {
+	margin-bottom: 24px;
+}
+
+.rating {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.rating .stars {
+	margin-top: 8px;
+}
+
+.desc {
+	margin-bottom: 24px;
+}
+
+.avatar {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.avatar p {
+	font-size: 14px;
+}
+
+.reviewcontainer {
+	position: relative;
+}
+
+.left {
+	position: absolute;
+	top: 50%;
+	background-color: var(--accent-darkblue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+	border-radius: 4px;
+	left: -50px;
+}
+
+.right {
+	position: absolute;
+	top: 50%;
+	background-color: var(--accent-darkblue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+	border-radius: 4px;
+	right: -50px;
+}
