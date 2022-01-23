@@ -1,0 +1,14 @@
+.container p {
+	color: rgba(0, 35, 77, 0.6);
+}
+
+.logo {
+	margin-bottom: 24px;
+}
+
+.input {
+	border: 1px solid rgba(0, 35, 77, 0.6);
+	background-color: #fbf3f0;
+	padding: 12px 16px;
+	border-radius: 12px;
+}

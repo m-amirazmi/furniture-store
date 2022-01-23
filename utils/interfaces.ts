@@ -41,3 +41,7 @@ export interface Product {
 	isNew?: boolean;
 	discountRate?: number;
 }
+
+export interface BlogPost {
+	title: string;
+}

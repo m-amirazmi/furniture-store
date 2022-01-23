@@ -7,6 +7,7 @@ import FeaturedCollections from "components/home/featuredcollections";
 import VideoBanner from "components/home/videobanner";
 import CustomerReview from "components/home/customerreview";
 import Banner from "components/home/banner";
+import Blogs from "components/home/blogs";
 
 const Home: NextPage = () => {
 	return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
 			<VideoBanner />
 			<CustomerReview />
 			<Banner />
+			<Blogs />
 		</>
 	);
 };

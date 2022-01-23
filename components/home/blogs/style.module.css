@@ -1,0 +1,62 @@
+.container {
+	max-width: 1160px;
+	width: 100%;
+	margin: 0px auto;
+	color: var(--accent-darkblue);
+	margin-bottom: 64px;
+}
+
+.container h2 {
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.blogs {
+	display: flex;
+}
+
+.blog {
+	width: 33%;
+	padding: 12px;
+	position: relative;
+}
+
+.calendar,
+.author {
+	display: flex;
+	gap: 8px;
+}
+
+.calendar p,
+.author p {
+	font-size: 10;
+	letter-spacing: 1.5px;
+	font-size: 400;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.meta {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.image {
+	margin-bottom: 16px;
+}
+
+.tag {
+	background-color: var(--accent-darkblue);
+	color: #fff;
+	position: absolute;
+	bottom: 75px;
+	right: 24px;
+	z-index: 100;
+	padding: 4px 16px;
+	border-radius: 4px;
+}
+
+.tag p {
+	font-size: 13px;
+	font-weight: 400;
+}
