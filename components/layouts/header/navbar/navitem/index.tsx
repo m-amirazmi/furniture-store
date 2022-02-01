@@ -3,7 +3,7 @@ import { INavItemProps } from "utils/interfaces";
 import styles from "./style.module.css";
 
 const NavItem: React.FC<INavItemProps> = ({ route }) => {
-	const query = route.query && { categories: route.query };
+	const query = route.query && { collections: route.query };
 
 	return (
 		<div className={styles.container}>

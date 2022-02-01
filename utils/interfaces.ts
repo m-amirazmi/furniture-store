@@ -33,15 +33,62 @@ export interface INavItemProps {
 	route: IRoute;
 }
 
-export interface Product {
-	pid: number | string;
-	name: string;
-	price: number;
-	isFeatured?: boolean;
-	isNew?: boolean;
-	discountRate?: number;
-}
-
 export interface BlogPost {
 	title: string;
+}
+
+export interface IProduct {
+	_id: string;
+	name: string;
+	price: number;
+	discount: number;
+	isFeatured: boolean;
+	isNew: boolean;
+	category: string;
+	quantity: number;
+	description: string;
+	sku: string;
+	vendor: string;
+	image: {
+		url: string;
+		width: number;
+		height: number;
+		size: number;
+		sizeKB: number;
+		sizeMB: number;
+	};
+	createdAt: string;
+}
+export interface IFeaturedProductsProps {
+	products: IProduct[];
+}
+
+export interface IHomeProps {
+	products: IProduct[];
+	featuredProducts: IProduct[];
+	featuredCollections: ICollection[];
+}
+
+export interface ICollection {
+	name: string;
+	isFeatured: boolean;
+	image: {
+		url: string;
+		width: number;
+		height: number;
+		size: number;
+		sizeKB: number;
+		sizeMB: number;
+	};
+	createdAt: string;
+	slug?: string;
+}
+
+export interface IGetFeatured {
+	data: IProduct[] & ICollection[];
+	count: number;
+}
+
+export interface IFeaturedCollectionsProps {
+	collections: ICollection[];
 }
