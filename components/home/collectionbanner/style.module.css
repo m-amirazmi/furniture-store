@@ -93,12 +93,20 @@
 	position: absolute;
 	top: 0px;
 	right: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 
 .leftitembottom .img {
 	position: absolute;
 	top: 0px;
 	left: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 
 .rightitem .img {

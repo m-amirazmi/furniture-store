@@ -38,7 +38,7 @@ const FeaturedProducts: React.FC<IFeaturedProductsProps> = ({ products }) => {
 					<p className="subtitle-sm">
 						{discount && (
 							<span>
-								{country.symbol} {withcommas(price * country.rate * discount)}
+								{country.symbol} {withcommas(price - price * country.rate * discount)}
 							</span>
 						)}
 						<span className={discount ? styles.discount : styles.number}>

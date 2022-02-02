@@ -2,7 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	images: {
-		domains: ["via.placeholder.com", "furnistore.s3.ap-southeast-1.amazonaws.com"],
+		domains: ["via.placeholder.com", "furnistore.s3.ap-southeast-1.amazonaws.com", "furnistore.s3.amazonaws.com"],
 	},
 };
 

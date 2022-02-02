@@ -8,34 +8,34 @@ const CollectionBanner: React.FC = () => {
 			<div className={styles.subcontainer}>
 				<div>
 					<div className={styles.leftitemtop}>
-						<h4>20% Off On Tank Tops</h4>
-						<p>20% Off On Tank Tops</p>
-						<Link href="/">
+						<h4>Office Gaming Chairs</h4>
+						<p>Work &amp; Play With Best Chairs</p>
+						<Link href="/shop?collection=chair">
 							<a>View more</a>
 						</Link>
 						<div className={styles.img}>
-							<Image src="/assets/images/placeholder/promiseslefttop.png" alt="Promises Left Top" width={160} height={220} objectFit="cover" />
+							<Image src="/assets/images/furnitures/chair1.png" alt="Promises Left Top" width={160} height={200} objectFit="contain" />
 						</div>
 					</div>
 					<div className={styles.leftitembottom}>
-						<h4>Let’s Buy Lorem Ipsum</h4>
-						<p>30% Off On Tank Tops</p>
-						<Link href="/">
+						<h4>Dinner Chair Available</h4>
+						<p>Eat Comfortably With Our Chairs</p>
+						<Link href="/shop?collection=chair">
 							<a>View more</a>
 						</Link>
 						<div className={styles.img}>
-							<Image src="/assets/images/placeholder/promisesleftbottom.png" alt="Promises Left Top" width={172} height={220} objectFit="cover" />
+							<Image src="/assets/images/furnitures/chair2.png" alt="Promises Left Top" width={172} height={190} objectFit="contain" />
 						</div>
 					</div>
 				</div>
 				<div className={styles.rightitem}>
-					<h4>Let’s buy lorem ipsum</h4>
-					<p>50% Off On Tank Tops</p>
-					<Link href="/">
+					<h4>Vintage Closet To Buy</h4>
+					<p>Get Our Latest Closet Now!</p>
+					<Link href="/shop?collection=closet">
 						<a>View more</a>
 					</Link>
 					<div className={styles.img}>
-						<Image src="/assets/images/placeholder/promisesright.png" alt="Promises Left Top" width={431} height={428} objectFit="cover" />
+						<Image src="/assets/images/furnitures/closet1.png" alt="Promises Left Top" width={370} height={350} objectFit="contain" />
 					</div>
 				</div>
 			</div>
