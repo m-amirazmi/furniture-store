@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 			<div className={styles.container}>
 				<Link href="/">
 					<a>
-						<Image src="/assets/images/logo.svg" alt="Logo" width={122} height={32} />
+						<Image src="/assets/images/logo1.svg" alt="Logo" width={214} height={30} />
 					</a>
 				</Link>
 				<div>
