@@ -49,7 +49,7 @@ const FeaturedProducts: React.FC<IFeaturedProductsProps> = ({ products }) => {
 						</span>
 					</p>
 				</div>
-				{discount && <div className={styles.discountTag}>{discount * 100}%</div>}
+				{discount && <div className={styles.discountTag}>-{discount * 100}%</div>}
 				{isFeatured && <div className={styles.tag}>{isFeatured && "Featured"}</div>}
 				{isNew && <div className={styles.newTag}>{isNew && "New"}</div>}
 				{showHover === _id && (
