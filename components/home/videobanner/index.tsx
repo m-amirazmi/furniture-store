@@ -27,23 +27,6 @@ const VideoBanner = () => {
 			<div className={styles.videocontainer}>
 				<video ref={videoRef} playsInline muted loop autoPlay className="mx-auto w-100" onClick={handlePlayVideo} src="/assets/videos/video.mp4"></video>
 			</div>
-			{!play && <div className={styles.overlay}></div>}
-			{!play && (
-				<div
-					className={styles.play}
-					onClick={() => {
-						if (videoRef.current?.paused) {
-							videoRef.current.play();
-							setPlay(true);
-						} else {
-							videoRef.current?.pause();
-							setPlay(false);
-						}
-					}}
-				>
-					<Image src="/assets/icons/video/play.svg" alt="play" width={231} height={231} />
-				</div>
-			)}
 		</div>
 	);
 };
