@@ -19,7 +19,9 @@ const CustomerReview: React.FC = () => {
 						<Image src="/assets/icons/customerreview/star-solid.svg" alt="quote" width={24} height={24} />
 					</div>
 				</div>
-				<p className={styles.desc}>“I am purchasing furniture from Bisum since the last 6 years. I love their prompt service and so far I have faced no complaints with their furniture.”</p>
+				<p className={styles.desc}>
+					“I am purchasing furniture from Furnistore since the last 6 years. I love their prompt service and so far I have faced no complaints with their furniture.”
+				</p>
 				<div className={styles.avatar}>
 					<Image src="/assets/images/person.jpeg" alt="avatar" width={80} height={80} />
 					<div>

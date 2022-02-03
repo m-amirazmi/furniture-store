@@ -14,7 +14,7 @@ export default function MyApp({ Component, pageProps }: IApp) {
 	return (
 		<>
 			<Head>
-				<title>Bisum | Welcome!</title>
+				<title>Furnistore | Welcome!</title>
 				<link rel="shortcut icon" href="/assets/images/favicon.ico" />
 			</Head>
 			<NextNProgress color="rgba(255,255,255,0.7)" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
