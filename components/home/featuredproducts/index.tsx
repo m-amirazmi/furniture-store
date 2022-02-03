@@ -17,6 +17,9 @@ const FeaturedProducts: React.FC<IFeaturedProductsProps> = ({ products }) => {
 		const productCreated = new Date(createdAt).getTime();
 		const isNew = today - productCreated <= 2629743000;
 
+		const totalPriceDiscount = price * country.rate * discount;
+		const totalPrice = price * country.rate;
+
 		return (
 			<div key={_id} className={styles.product} onMouseOver={() => handleProductHover(_id)}>
 				<Image src={image.url} alt="Featured" width="720px" height="1080px" objectFit="contain" />
@@ -38,7 +41,7 @@ const FeaturedProducts: React.FC<IFeaturedProductsProps> = ({ products }) => {
 					<p className="subtitle-sm">
 						{discount && (
 							<span>
-								{country.symbol} {withcommas(price - price * country.rate * discount)}
+								{country.symbol} {withcommas(totalPrice - totalPriceDiscount)}
 							</span>
 						)}
 						<span className={discount ? styles.discount : styles.number}>
