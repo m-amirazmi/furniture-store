@@ -21,7 +21,7 @@ const CustomerReview: React.FC = () => {
 				</div>
 				<p className={styles.desc}>“I am purchasing furniture from Bisum since the last 6 years. I love their prompt service and so far I have faced no complaints with their furniture.”</p>
 				<div className={styles.avatar}>
-					<Image src="/assets/icons/customerreview/avatar.png" alt="avatar" width={80} height={80} />
+					<Image src="/assets/images/person.jpeg" alt="avatar" width={80} height={80} />
 					<div>
 						<h5>Floyd Miles</h5>
 						<p>Executive, Hypebeast</p>

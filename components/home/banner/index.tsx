@@ -6,7 +6,7 @@ const Banner: React.FC = () => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.imgcontainer}>
-				<Image src="/assets/images/placeholder/imgbanner.png" alt="Image Banner" layout="fill" objectFit="cover" />
+				<Image src="/assets/images/furnitures/banner.png" alt="Image Banner" layout="fill" objectFit="cover" />
 			</div>
 			<div className={styles.content}>
 				<h2>Created Furniture</h2>

@@ -22,8 +22,8 @@ const Home: NextPage<IHomeProps> = ({ featuredCollections, featuredProducts }) =
 			<FeaturedCollections collections={featuredCollections} />
 			<VideoBanner />
 			<CustomerReview />
-			<Banner />
-			<Blogs />
+			{/* <Banner /> */}
+			{/* <Blogs /> */}
 		</>
 	);
 };

@@ -40,6 +40,10 @@
 	gap: 24px;
 }
 
+.avatar img {
+	border-radius: 50px;
+}
+
 .avatar p {
 	font-size: 14px;
 }
